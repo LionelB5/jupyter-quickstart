@@ -24,7 +24,7 @@ source venv/bin/activate
 **Windows**
 
 ```powershell
-venv\Scripts\activate.bat
+.\venv\Scripts\activate.bat
 ```
 
 3. Install the necessary dependencies from the `requirements.txt` file:
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 From within your activated virtual environment, run:
 
 ```bash
-jupyter notebook
+python -m jupyter notebook
 ```
 
 # Installing new dependencies
