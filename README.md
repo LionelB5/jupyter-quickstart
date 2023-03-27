@@ -3,7 +3,7 @@
 Project containing a handful of Jupyter Notebooks that make use of libraries often used in the
 field of data science.
 
-Developed using Python 3.9.1
+Manually tested against Python 3.9.1
 
 # Local environment setup
 
