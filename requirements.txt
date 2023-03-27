@@ -137,11 +137,15 @@ notebook==6.5.3
     # via -r requirements.in
 notebook-shim==0.2.2
     # via nbclassic
+numpy==1.24.2
+    # via pandas
 packaging==23.0
     # via
     #   ipykernel
     #   jupyter-server
     #   nbconvert
+pandas==1.5.3
+    # via -r requirements.in
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
@@ -179,8 +183,11 @@ python-dateutil==2.8.2
     # via
     #   arrow
     #   jupyter-client
+    #   pandas
 python-json-logger==2.0.7
     # via jupyter-events
+pytz==2023.2
+    # via pandas
 pyyaml==6.0
     # via jupyter-events
 pyzmq==25.0.2
