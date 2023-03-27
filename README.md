@@ -9,29 +9,29 @@ Manually tested against Python 3.9.1
 
 1. Navigate to the root of the project, and create a virtual environment:
 
-```bash
-python -m venv venv
-```
+    ```bash
+    python -m venv venv
+    ```
 
 2. Once the virtual environment is created, activate it:
 
-**Linux**
+    **Linux**
 
-```bash
-source venv/bin/activate
-```
+    ```bash
+    source venv/bin/activate
+    ```
 
-**Windows**
+    **Windows**
 
-```powershell
-.\venv\Scripts\activate.bat
-```
+    ```powershell
+    .\venv\Scripts\activate.bat
+    ```
 
 3. Install the necessary dependencies from the `requirements.txt` file:
 
-```
-pip install -r requirements.txt
-```
+    ```
+    pip install -r requirements.txt
+    ```
 
 # Running the notebooks
 
@@ -50,8 +50,14 @@ Before adding new dependencies, [ensure you have `pip-tools` installed](https://
 To add a new dependency:
 
 -   Add the package name of the new dependency to the `requirements.in` file.
--   Run `pip-compile requirements.in` to regenerate the `requirements.txt` file.
+-   Run the following command to pin the dependency and its transitive dependencies in the `requirements.txt` file.
+
+    ```bash
+    pip-compile requirements.in
+    ```
+
 -   Once the `requirements.txt` file has been regenerated, in an activated virtual environment, run:
+
     ```bash
     pip install -r requirements.txt
     ```
