@@ -1,5 +1,7 @@
 # jupyter-quickstart
 
+[![CI](https://github.com/LionelB5/jupyter-quickstart/actions/workflows/app.yml/badge.svg)](https://github.com/LionelB5/jupyter-quickstart/actions/workflows/app.yml)
+
 Project containing a handful of Jupyter Notebooks that make use of libraries often used in the
 field of data science.
 
