@@ -51,7 +51,7 @@ python -m jupyter notebook
 
 # Formatting the code within the notebooks
 
-This project uses `black` for consistent code formatting.
+This project uses [black](https://github.com/psf/black) for consistent code formatting.
 
 To format the notebooks execute:
 
@@ -63,7 +63,7 @@ Black is also executed as part of the pre-commit hooks.
 
 # Installing new dependencies
 
-This project uses `pip-compile` to [manage dependencies and ensure determinism](https://youtu.be/LAig6s9Hkj0).
+This project uses `pip-compile` to [manage dependencies](https://youtu.be/LAig6s9Hkj0).
 
 Before adding new dependencies, [ensure you have `pip-tools` installed](https://pypi.org/project/pip-tools/) (this package provides the `pip-compile` command).
 
