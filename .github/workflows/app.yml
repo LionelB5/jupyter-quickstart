@@ -1,9 +1,9 @@
-name: Run pre-commit hooks
+name: Code formatting & validation
 
 on: [push]
 
 jobs:
-    pre-commit-hooks:
+    execute-pre-commit-hooks:
         runs-on: ubuntu-20.04
         steps:
             - name: Checkout jupyter-quickstart source code
