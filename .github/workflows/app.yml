@@ -1,0 +1,18 @@
+name: Run pre-commit hooks
+
+on: [push]
+
+jobs:
+    execute-pre-commit:
+        runs-on: ubuntu-20.04
+        steps:
+            - name: Checkout jupyter-quickstart source code
+              uses: actions/checkout@v1
+            - name: Set up Python 3.9
+              uses: actions/setup-python@v4
+              with:
+                  python-version: "3.9.16"
+            - name: Install pre-commit
+              run: pip install pre-commit
+            - name: Execute pre-commit hooks
+              run: pre-commit run --all-files
