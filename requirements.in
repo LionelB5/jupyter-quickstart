@@ -2,3 +2,5 @@ notebook
 pandas
 numpy
 matplotlib
+
+black[jupyter]
