@@ -3,7 +3,7 @@ name: Run pre-commit hooks
 on: [push]
 
 jobs:
-    execute-pre-commit:
+    pre-commit-hooks:
         runs-on: ubuntu-20.04
         steps:
             - name: Checkout jupyter-quickstart source code
