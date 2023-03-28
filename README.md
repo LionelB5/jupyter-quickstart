@@ -33,6 +33,12 @@ Manually tested against Python 3.9.1
     pip install -r requirements.txt
     ```
 
+4. Install the pre-commit hooks (optional but recommended)
+
+    ```
+    pre-commit install
+    ```
+
 # Running the notebooks
 
 From within your activated virtual environment, run:
@@ -40,6 +46,18 @@ From within your activated virtual environment, run:
 ```bash
 python -m jupyter notebook
 ```
+
+# Formatting the code within the notebooks
+
+This project uses `black` for consistent code formatting.
+
+To format the notebooks execute:
+
+```bash
+black .
+```
+
+Black is also executed as part of the pre-commit hooks.
 
 # Installing new dependencies
 
